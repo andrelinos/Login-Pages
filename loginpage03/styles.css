@@ -1,0 +1,44 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  
+  background: rgba(6,89,178,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(6,89,178,1)), color-stop(35%, rgba(6,89,178,1)), color-stop(51%, rgba(15,111,215,1)), color-stop(71%, rgba(0,86,179,1)), color-stop(83%, rgba(0,86,179,1)), color-stop(100%, rgba(0,86,179,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0659b2', endColorstr='#0056b3', GradientType=1 );
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 10%;
+}
+
+.window {
+  width: 760px;
+  height: 560px;
+  background: #ddd;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-center {
+  width: 750px;
+  height: 550px;
+
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#08c6fc",GradientType=1);
+
+  padding: 16px;
+}
