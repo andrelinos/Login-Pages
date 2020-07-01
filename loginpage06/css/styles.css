@@ -1,0 +1,112 @@
+* {
+  outline: 0;
+  box-sizing: border-box;
+  
+  font-family: 'Roboto Slab', serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-size: 14px;
+  
+  background: #8c7ae6;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+form {
+  width: 500px;
+  height: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+form h2 {
+  font-size: 44px;
+  margin: 32px 0;
+  font-weight: bold;
+}
+.inputs i {
+  font-size: 20px;
+}
+
+form input[type="email"],
+form input[type="password"]
+ {
+  width: 350px;
+  height: 32px;
+  margin: 16px 0 16px 8px;
+  border-radius: 3px;
+  border: none;
+  padding: 0 8px;
+}
+
+.login-options {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > button {
+  width: 200px;
+  height: 44px;
+  background: #7159c1;
+  margin-top: 32px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+form span {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -80px;
+  right: 5px;
+  border-radius: 50%;
+  background: #7159c1;
+  align-items: center;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+
+form span button {
+  width: 70px;
+  height: 24px;
+  margin-top: 16px;
+  border-radius: 3px;
+  background: #8c7ae6;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
