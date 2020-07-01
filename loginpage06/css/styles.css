@@ -85,7 +85,7 @@ form > button {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-form span {
+form > span {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -113,5 +113,4 @@ form span button {
   background: #8c7ae6;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
-  box-shadow: 2px 1px #fff;
 }
