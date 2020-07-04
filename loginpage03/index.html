@@ -14,39 +14,45 @@
     <div class="window">
       <div class="container-center">
         <header>
-          <div class="signin-title">Sign in to Windows Live <strong>Messenger</strong></div>
+          <div class="signin-title">Sign in to system <strong>account</strong></div>
           <span>?</span>
         </header>
-  
-        <form action="" class="login">
-          <div class="avatar"></div>
-          <div class="container-login">
+        <div class="container-form">
+          <div class="avatar">
+            <img src="assets/avatar.png" alt="">
+          </div>
+          <form action="" class="login">
             <input type="email" placeholder="example555@hotmail.com">
             <input type="password" placeholder="Password">
-            <div class="forgot">Forgot yout password?</div>
+            <div class="forgot"><a href="">Forgot your password?</a></div>
             <div class="signin-options">
-              <div class="signin-as">Sign in as: </div>
-              <ul>
-                <li>Available</li>
-                <li>Busy</li>
-                <li>Away</li>
-                <li>Appear offline</li>
-              </ul>
-  
-              <div class="sign-out-here">Sign out from here (MS-Linux)</div>
-  
-              <ul>
-                <li>Change display picture...</li>
-                <li>Change scene...</li>
-                <li>Change display name...</li>
-              </ul>
-  
-              <div class="options">Options</div>
+              <label  class="signin-as">Sign in as: </label>
+              <select>
+                <option value="administrator"></div> Administrator</option>
+                <option value="moderator">Moderator</option>
+                <option value="editor">Editor</option>
+                <option value="user">User</option>
+              </select>
             </div>
-  
-          </div>
-        </form>
-  
+
+            <div class="input-check">
+              <input type="checkbox" checked>
+              <label>Remember my ID and password <a href="">Forget me</a></label>
+            </div>
+
+            <div class="input-check">
+              <input type="checkbox" checked>
+              <label>Sign me in automatically <a href="">Options</a></label>
+            </div>
+
+            <div class="buttons-sign">
+              <button>Sign in</button>
+              <button>Cancel</button>
+            </div>
+
+            <div class="sign-up">Don't have a accound ID? <a href="">Sign up</a></div> 
+          </form>
+        </div>
         <div class="section-links">
           <a href="">Privacy statement</a>
           <a href="">Terms of use</a>

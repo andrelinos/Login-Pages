@@ -1,6 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smothing: antialiased;
+  box-sizing: border-box;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   
   background: rgba(6,89,178,1);
   background: -moz-radial-gradient(center, ellipse cover, rgba(6,89,178,1) 0%, rgba(6,89,178,1) 35%, rgba(15,111,215,1) 51%, rgba(0,86,179,1) 71%, rgba(0,86,179,1) 83%, rgba(0,86,179,1) 100%);
@@ -12,6 +20,15 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0659b2', endColorstr='#0056b3', GradientType=1 );
 }
 
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -20,25 +37,150 @@ body {
 }
 
 .window {
-  width: 760px;
-  height: 560px;
-  background: #ddd;
+  width: 755px;
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 3px;
+}
+
+header span {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  border: 2px solid #fff;
+  background: #103694;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .container-center {
   width: 750px;
-  height: 550px;
 
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(8,198,252,1) 100%);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(8,198,252,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(8,198,252,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(8,198,252,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#08c6fc",GradientType=1);
-
+  overflow: hidden;
+  border-radius: 3px;
   padding: 16px;
+
+  position: relative;
+}
+
+.signin-title {
+  width: 100%;
+  font-size: 2rem;
+  margin: 32px 0;
+  padding: 0 120px;
+  color: #555;
+}
+
+.signin-title strong {
+  font-weight: bold;
+  color: #111;
+}
+
+.avatar {
+  min-width: 120px;
+  height: 120px;
+  background: red;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(116,255,151);
+  background: -moz-linear-gradient(0deg, rgba(116,255,151,1) 23%, rgba(19,125,43,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(116,255,151,1) 23%, rgba(19,125,43,1) 100%);
+  background: linear-gradient(0deg, rgba(116,255,151,1) 23%, rgba(19,125,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#74ff97",endColorstr="#137d2b",GradientType=1);
+}
+
+.avatar img {
+  width: 105px;
+  height: 105px;
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(119, 119, 119, 0.7);
+}
+
+.container-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 120px;
+}
+
+form {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+form input {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0 8px;
+  border: 1px solid #999;
+  margin-bottom: 16px;
+}
+
+.forgot, .signin-options {
+  margin-bottom: 16px;
+}
+
+.signin-options select {
+  border: none;
+  background: transparent;
+}
+
+.input-check {  
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-check input {
+  width: 16px;
+  margin: auto 0;
+}
+
+.input-check label {
+  width: 100%;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.section-links a {
+  margin-right: 16px;
+  color: #777;
+}
+
+.buttons-sign {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.buttons-sign button {
+  width: 110px;
+  height: 32px;
+  border-radius: 4px;
+  margin-right: 8px;
 }
