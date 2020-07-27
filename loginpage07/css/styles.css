@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: rgb(57,190,255);
+  background: -moz-radial-gradient(circle, rgba(57,190,255,1) 6%, rgba(0,135,230,1) 77%);
+  background: -webkit-radial-gradient(circle, rgba(57,190,255,1) 6%, rgba(0,135,230,1) 77%);
+  background: radial-gradient(circle, rgba(57,190,255,1) 6%, rgba(0,135,230,1) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#39beff",endColorstr="#0087e6",GradientType=1);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.container .user-icon {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .user-icon .header-circle {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 8px 0;
+}
+
+.container .user-icon .body-user {
+  width: 180px;
+  height: 90px;
+  border: 2px solid #fff;
+  border-radius: 90px 90px 0 0;
+  border-bottom: none;
+}
+
+.container h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #777;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.container form label i {
+  max-width: 45px;
+  display: flex;
+  flex: 1;
+}
+
+.container form label .username,
+.container form label .userpassword {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex: 1;
+  padding: 0 16px;
+  font-size: 28px;
+  text-align: center;
+  background: none;
+  color: #333;
+}
+
+.container .login-options {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  padding: 0 8px;
+}
+
+body > div > div.login-options > label {
+  display: flex;
+  align-items: center;
+}
+
+.container .login-options > label input {
+  margin-right: 3px;
+}
+
+
+.container .login-options a {
+  color: #fff;
+}
+
+.container button {
+  width: 300px;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  background: orange;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 16px;
+}
