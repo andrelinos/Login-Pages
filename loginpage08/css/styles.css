@@ -14,18 +14,16 @@ html, body {
   align-items: center;
   font-size: 16px;
   line-height: 1.6;
-
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
-background: #627d4d; /* Old browsers */
-background: -moz-linear-gradient(top,  #627d4d 0%, #1f3b08 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #627d4d 0%,#1f3b08 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #627d4d 0%,#1f3b08 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=0 ); /* IE6-9 */
- 
+  
+  background: rgb(9,132,227);
+  background: -moz-linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(116,185,255,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(116,185,255,1) 100%);
+  background: linear-gradient(0deg, rgba(9,132,227,1) 0%, rgba(116,185,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0984e3",endColorstr="#74b9ff",GradientType=1);
   
 }
 
-a {
+a, a:visited, a:active {
   text-decoration: none;
 }
 
@@ -35,14 +33,14 @@ button {
 
 h2 {
   font-size: 28px;
-  color: #fff;
+  color: #333;
   font-weight: bold;
 }
 
 .container {
   height: 600px;
   padding: 60px;
-
+  
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -50,7 +48,7 @@ h2 {
 
 .container .signin-container {
   width: 400px;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,9 +56,10 @@ h2 {
   padding: 50px;
   margin-right: 50px;
   position: relative;
-
-  background: rgba(255, 255, 255, 0.3);
+  
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
+  border: 2px solid #fff;
 }
 
 .container .signin-container h2 {
@@ -71,21 +70,20 @@ h2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #999;
   border: 2px solid #fff;
   padding: 8px;
   position: absolute;
   top: -50px;
   left: calc(50% - 50px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-}
-
-.container .signin-container .avatar img {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
+  
+  background: #333;
+  background: url(https://picsum.photos/id/237/200/200) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-position: center;
   object-fit: cover;
 }
 
@@ -98,50 +96,67 @@ h2 {
 .container div form label {
   width: 100%;
   height: 50px;
-  background: red;
   margin-bottom: 8px;
 }
 
 .container div form label input {
   width: 100%;
   height: 50px;
-  border: none;
-  padding: 0 8px;
+  border: 1px solid rgba(9,132,227, 0.5);
+  
+  box-shadow: 0px 1px 2px 0px rgba(9,132,227,0.4);
+  
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.container div > label {
+  width: 100%;
+}
+
+.container div > label > input {
+  margin-right: 5px;
 }
 
 .container .signin-container button,
 .container .signup-container button {
-  width: 170px;
+  width: 100%;
   height: 45px;
   border-radius: 12px;
   border: none;
-  background: orange;
+  background: #0984e3;
   color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 0;
 }
 
-.container .signin-container a {
+.container > div > a {
   width: 100%;
   text-align: center;
-  color: blue;
+  color: #333;
+  font-weight: bold;
 }
 
 .container .signup-container {
   width: 400px;
-  height: 500px;
+  height: auto;
   display: flex;
-
+  
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background: rgba(255, 255, 255, 0.3);
+  
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 12px;
   padding: 50px;
+  border: 2px solid #fff;
 }
 
 .container .signup-container form {
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  
 }
