@@ -1,0 +1,134 @@
+:root {
+  --color-primary: #333;
+  --bg-color-primary: #eee;
+  --bg-color-secondary: #777;
+  --color-secundary: #222;
+  --color-text-white: #fff;
+  /* input */
+  --btn-color-text-account:  rgba(255, 166, 0, 1);
+  --btn-color-border-input:  rgba(255, 166, 0, 0.5);
+  --btn-color-background-input:  rgba(235, 199, 132, 0.1);
+  --btn-color-background:  #4c054e;
+  --btn-color-text:#fff;
+  --field-color-backgound: #fff;
+  --field-color-text: #333;
+  --field-color-border: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+}
+
+button:hover {
+  filter: brightness(0.93);
+  color: #fff;
+}
+
+h1 {
+  clear: both;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(-45deg, #00bbaf 0%, #008dac 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page .container-login {
+  width: 32.5rem;
+  height: 32.5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px -5px #444;
+  background: -webkit-linear-gradient(-45deg, rgba(0, 141, 172, 0.5) 0%, rgba(0, 187, 174, 0.5) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page .container-login h1 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#page .container-login form {
+  width: 24rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0.5rem;
+}
+
+#page .container-login form input {
+  height: 2rem;
+  background: #028dae;
+  color: rgba(255, 255, 255, 0.9);
+  border: 0.125rem solid #008dac;
+  border-radius: 0.063rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+#page .container-login form input + input {
+  margin: 0.5rem 0;
+}
+
+#page .container-login form input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+#page .container-login form input:focus {
+  border: 0.125rem solid rgba(0, 87, 138, 0.8);
+  background: rgba(0, 87, 138, 0.3);
+}
+
+#page .container-login form button {
+  height: 2.3rem;
+  border: none;
+  border-radius: 0.063rem;
+  background: #00578a;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: filter 0.2s;
+}
+
+#page .container-login .options {
+  width: 24rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#page .container-login .options span {
+  transition: color 0.2s;
+}
+
+#page .container-login .options span:hover {
+  cursor: pointer;
+  color: #fff;
+}
