@@ -1,7 +1,6 @@
 # Screen login 07
 
-<img src="./screenlogin
-.png">
+<img src=screenlogin.png>
 
 ## Languages
 
